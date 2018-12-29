@@ -79,7 +79,7 @@ sudo apt-get install wget
 3. In the terminal, type `npm init`. You can accept all the default in the interactive prompt, or enter details to suit your project.
 
 4. This should create a file named `package.json`.
-<img src="images/package-json.jpg" width="700">
+<img src="images/package-json.jpg" width="900">
 
 5. Within the command prompt / terminal, type `npm install`.
 
