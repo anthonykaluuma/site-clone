@@ -69,4 +69,15 @@ sudo apt-get install wget
     "deploy": "cd public && wget https://yoursite.com --recursive --page-requisites --html-extension --convert-links -xnH -e robots=off && firebase deploy"
   },
 ```
-9. Once this has run, inspect the contents of your `public` folder. Each page from your site should be present here, as long as each page has a url going to it from a page on your site. For example, if your 404 page has no links to it from any other page, it won't be cloned into your public folder. So make sure that any page of your site that you want publised has a link to it from other pages on your site (you can set these links to display "none", they just need to be there).
+9. Save `package.json`, then go back to your command prompt / termninal and enter `npm run deploy`.
+
+10. Once this has finished running, inspect the contents of your `public` folder. Each page from your site should be present here.
+
+
+### FAQs
+
+**B**: My public folder contains most of the pages of my site, but it's missing some like the 404 page. Why is this?
+**A**: The Wget script that runs goes to the url you enter (generally the home page of your site) and clones this page. From here, Wget gets any links to any other pages that it can see. Wget then goes to the pages it has, and clones these. It gets any new links on these pages, then goes to these, and so on so forth. This means that Wget very likely gets all the pages in your site - unless there are no links to certain pages in your site. This is often the case for your 404 page. To get around this, all you need to to is make sure that somewhere on a site page, there is a link to the 404 page. It does not matter if it is hidden, but it just needs to be there. You can use this technique for any other pages that are missing. 
+
+
+as long as each page has a url going to it from a page on your site. For example, if your 404 page has no links to it from any other page, it won't be cloned into your public folder. So make sure that any page of your site that you want publised has a link to it from other pages on your site (you can set these links to display "none", they just need to be there).
