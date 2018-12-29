@@ -76,7 +76,7 @@ sudo apt-get install wget
 
 2. Open up the integrated command prompt / terminal by pressing `ctrl + backtick` on your keyboard. You can also open this up from the top menu bar by going to `terminal > new terminal`.
 
-3. In the terminal, type `npm init`. You can accept all the default in the interactive prompt, or enter details to suit your project.
+3. In the terminal, type `npm init`. You can accept all the defaults in the interactive prompt, or enter details to suit your project.
 
 4. This should create a file named `package.json`.
 <img src="images/package-json.jpg" width="900">
