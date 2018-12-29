@@ -96,8 +96,6 @@ sudo apt-get install wget
 
 9. Be sure to change out `https://yoursite.com` for your actual site, then save `package.json`.
 
-10. Save `package.json`, then go back to your command prompt / terminal and enter `npm run deploy`.
-
 ### Step 4: Run the deployment script
 1. Go to your command prompt / terminal and enter `npm run deploy`.
 
