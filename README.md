@@ -57,3 +57,14 @@ sudo apt-get install wget
 2. Open up the integrated command prompt / terminal by pressing `ctrl + backtick` on your keyboard. You can also open this up from the top menu bar by going to `terminal > new terminal`.
 3. In the terminal, type `npm init`. You can accept all the default in the interactive prompt, or enter details to suit your project.
 4. This should create a file named `package.json`.
+<img src="images/package-json.jpg" width="700">
+5. Within the command prompt / terminal, type `npm install`.
+6. Close the command prompt / terminal that is open, then open a new one.
+7. Make sure you are logged into Firebase by typing `firebase login`. 
+8. Within `package.json`, go to the script section and remove the test script if present. We will add a new key value pair with a name and command, so it will look like this:
+```
+  "scripts": {
+    "deploy": "cd public && wget https://yoursite.com --recursive --page-requisites --html-extension --convert-links -xnH -e robots=off && firebase deploy"
+  },
+```
+9. Once this has run, inspect the contents of your `public` folder. Each page from your site should be present here, as long as each page has a url going to it from a page on your site. For example, if your 404 page has no links to it from any other page, it won't be cloned into your public folder. So make sure that any page of your site that you want publised has a link to it from other pages on your site (you can set these links to display "none", they just need to be there).
