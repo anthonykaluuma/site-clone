@@ -1,10 +1,10 @@
 # Site Clone
-These instructions provide supplimenatary information to my [video](https://www.youtube.com/watch?v=K21WClcKo4g) on how to clone a Website and host it with Firebase Hosting. Please watch this video in full for context before proceeding with the instructions below.
+These instructions provide supplementary information to my [video](https://www.youtube.com/watch?v=K21WClcKo4g) on how to clone a Website and host it with Firebase Hosting. Please watch this video in full for context before proceeding with the instructions below.
 
 
 ## Differences between these instructions and my video
 - These instructions cater to Windows, Mac, and Linux rather than Linux / MacOS systems alone.
-- Here we use a NPM deployment script which is operating system agnositc, rather than a bash script (like in my video).
+- Here we use a NPM deployment script which is operating system agnostic, rather than a bash script (like in my video).
 
 
 ### Step 1: Watch the [video](https://www.youtube.com/watch?v=K21WClcKo4g) in full
@@ -96,10 +96,10 @@ sudo apt-get install wget
 
 9. Be sure to change out `https://yoursite.com` for your actual site, then save `package.json`.
 
-10. Save `package.json`, then go back to your command prompt / termninal and enter `npm run deploy`.
+10. Save `package.json`, then go back to your command prompt / terminal and enter `npm run deploy`.
 
 ### Step 4: Run the deployment script
-1. Go to your command prompt / termninal and enter `npm run deploy`.
+1. Go to your command prompt / terminal and enter `npm run deploy`.
 
 2. Once this has finished running, inspect the contents of your `public` folder. Each page from your site should be present here.
 
