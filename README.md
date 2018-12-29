@@ -58,7 +58,9 @@ sudo apt-get install wget
 3. In the terminal, type `npm init`. You can accept all the default in the interactive prompt, or enter details to suit your project.
 4. This should create a file named `package.json`.
 <img src="images/package-json.jpg" width="700">
+
 5. Within the command prompt / terminal, type `npm install`.
+
 6. Close the command prompt / terminal that is open, then open a new one.
 7. Make sure you are logged into Firebase by typing `firebase login`. 
 8. Within `package.json`, go to the script section and remove the test script if present. We will add a new key value pair with a name and command, so it will look like this:
