@@ -1,0 +1,19 @@
+{
+  "name": "site-clone",
+  "version": "1.0.0",
+  "description": "This project serves as an improved instruction manual over my [video](https://www.youtube.com/watch?v=K21WClcKo4g) on how to clone a Website and host it with Firebase Hosting. The instructions in my video are heavily *nix operating system focused, whereas these instructions cater to Windows, Mac, and Linux.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasondark93/site-clone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasondark93/site-clone/issues"
+  },
+  "homepage": "https://github.com/jasondark93/site-clone#readme"
+}
